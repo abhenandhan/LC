@@ -30,7 +30,7 @@ class array():
             return popped_elem
     
     def insert(self, elem, index):
-        if (index > self.len+1) | (index<0):
+        if (index > self.len+1) | (index<=0):
             print('Index too large or small')
         elif index == self.len+1:
             self.push(elem)
